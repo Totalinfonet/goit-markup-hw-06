@@ -432,7 +432,7 @@
             <label class="subscribe-title">
               Підпишіться на розсилку
               <div class="subscribe-box">
-                <input class="subscribe-input" type="email" name="subscribe" autofocus placeholder="E-mail">
+                <input class="subscribe-input" type="email" name="subscribe" placeholder="E-mail">
               <button class="subscribe-button" type="submit">
                 Підписатися
                 <svg class="send-icon" width="24" height="24">
@@ -456,9 +456,42 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis natus est iure quibusdam nulla atque eligendi et. Culpa beatae earum numquam voluptatem amet reprehenderit, placeat vel fugiat autem! Reiciendis, nesciunt.
+        <p class="form-title">
+          Залиште свої дані, ми вам передзвонимо
         </p>
+        
+        <form class="modal-form">
+
+          <div class="form-field">
+            <label for="name" class="modal-label">Ім'я</label>
+            <input type="text" name="name" id="name">
+          </div>
+
+          <div class="form-field">
+            <label for="tel" class="modal-label">Телефон</label>
+              <input type="tel" name="tel" id="tel">
+          </div>
+
+          <div class="form-field">
+            <label for="email" class="modal-label">Пошта</label>
+            <input type="email" name="email" id="email">
+          </div>
+
+          <div class="form-field">
+            <label for="comment" class="modal-label">Коментар</label>
+            <textarea class="modal-textarea" name="comment" id="comment" rows="10" placeholder="Введіть текст"></textarea>
+          </div>
+          
+          <label>
+            <input type="checkbox" name="checkbox">
+            Погоджуюся з розсилкою та приймаю <a href="#" target="_blank">Умови договору</a>
+          </label>
+
+          <button type="submit">
+            Відправити
+          </button>
+          
+        </form>
       </div>
 
     </div>

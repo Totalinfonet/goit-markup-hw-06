@@ -326,16 +326,12 @@ button {
     transform: translate(-50%, -50%) scale(1);
     width: 528px;
     height: 581px;
-    padding: 50px;
+    padding: 40px;
     background-color: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     opacity: 1;
     transition: transform var(--transition-duration) var(--cubic-bezier), opacity var(--transition-duration) var(--cubic-bezier);
-}
-
-.modal p {
-    color: orangered;
 }
 
 .close-button {
@@ -362,6 +358,37 @@ button {
     fill: #000000
 }
 
+.form-title {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-color);
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.modal-label {
+    display: inline-block;
+}
+
+.modal-textarea {
+    resize: none;
+}
 
 /* Section`s Titles */
 
@@ -768,10 +795,6 @@ margin-bottom: 20px;}
     line-height: 1.7;
     letter-spacing: 0.03em;
 }
-
-/* .footer-list:last-child {
-    margin-top: 9px;
-} */
 
 .footer-item {
     margin-bottom: 9px;
